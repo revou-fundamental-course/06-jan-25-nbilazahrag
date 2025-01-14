@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #1a191e;
+}
+header{
+    position: fixed;
+    background: linear-gradient(#1a191e, transparent);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #d62909;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: #d8ab81;
+    font-size: 25px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    z-index: 10000;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: blanchedalmond;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: #1b346a;
+    color: blanchedalmond;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img#main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+    pointer-events: none;
+}
+#text{
+    position: absolute;
+    margin-bottom: 40px;
+    right: 55px;
+    color: blanchedalmond;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 50px;
+    z-index: 9;
+}
+#name-input{
+    margin-top: 90px;
+    justify-content: end;
+    background: rgb(255, 255, 255, 0.2);
+    color: #eed3b8;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 360px;
+}
+#submit{
+    padding: 10px 15px;
+    background: #d8ab81;
+    color: #1b346a;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
