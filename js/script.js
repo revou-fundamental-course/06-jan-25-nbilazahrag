@@ -43,7 +43,7 @@ document.getElementById('submit').addEventListener("click", function(e) {
     document.getElementById('name').textContent = nameInput;
 });
 
-//im a... autotype
+//autotype
 const autoTypeElement = document.querySelector('#autoType .auto-type');
 const words = ["Graphic Designer", "FrontEnd Developer", "Content Creator"];
 let wordIndex = 0;
@@ -72,4 +72,55 @@ function erase() {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     type();
+});
+
+
+//form
+document.getElementById('submit-message').addEventListener('click', function(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    //nama
+    const name = document.getElementById('name').value;
+    const nameError = document.getElementById('name-error');
+    if (name.trim() === '') {
+        nameError.textContent = 'Nama is required';
+        isValid = false;
+    } else {
+        nameError.textContent = '';
+    }
+
+    //tangal lahir
+    const dob = document.getElementById('dob').value;
+    const dobError = document.getElementById('dob-error');
+    if (dob.trim() === '') {
+        dobError.textContent = 'Tanggal Lahir is required';
+        isValid = false;
+    } else {
+        dobError.textContent = '';
+    }
+
+    //jenis kelamin
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const genderError = document.getElementById('gender-error');
+    if (!gender) {
+        genderError.textContent = 'Jenis Kelamin is required';
+        isValid = false;
+    } else {
+        genderError.textContent = '';
+    }
+
+    //pesan
+    const message = document.getElementById('message').value;
+    const messageError = document.getElementById('message-error');
+    if (message.trim() === '') {
+        messageError.textContent = 'Message is required';
+        isValid = false;
+    } else {
+        messageError.textContent = '';
+    }
+
+    if (isValid) {
+        alert('Form submitted successfully!');
+    }
 });

@@ -166,21 +166,6 @@ header ul li a:hover, .active{
     font-size: 14px;
     cursor: pointer;
 }
-@media (max-width: 600px) {
-    .main-text {
-        font-size: 1.2rem;
-    }
-
-    .name-form {
-        flex-direction: column;
-        top: 70%;
-    }
-
-    .name-form input, .name-form button {
-        margin: 0.5rem 0;
-        width: 80%;
-    }
-}
 
 .ourProfile{
     margin: 50px;
@@ -199,4 +184,113 @@ header ul li a:hover, .active{
     flex-direction: column;
     align-items: flex-end;
     padding: 150px 50px 50px 200px;
+}
+.profile-text p{
+    text-align: right;
+    font-size: large;
+}
+.messageUs{
+    margin: 50px;
+    padding: 50px;
+    color: #eed3b8;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+.message-text, .message-input {
+    flex: 1;
+    margin: 0.5rem;
+}
+.message-input {
+    display: flex;
+    flex-direction: column;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.input-group label {
+    width: 150px; 
+    margin-right: 1rem;
+}
+.input-group input, .input-group textarea {
+    flex: 1;
+    background: #eed3b8;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #1b346a;
+}
+#subMessage{
+    background: #1b346a;
+    color: #eed3b8;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#subMessage:hover{
+    background: #d62909;
+    color: #eed3b8;
+}
+.error-message{
+    color: red;
+    font-size: 0.8rem;
+}
+
+footer{
+    background: #1b346a;
+    color: #eed3b8;
+    padding: 15px;
+    text-align: center;
+}
+footer a{
+    color: #d62909;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 1.2rem;
+    }
+
+    .name-form {
+        flex-direction: column;
+        top: 70%;
+    }
+
+    .name-form input, .name-form button {
+        margin: 0.5rem 0;
+        width: 80%;
+    }
+
+    .logoProfile {
+        width: 80px; 
+    }
+
+    .messageUs {
+        flex-direction: column;
+    }
+
+    .message-text, .message-input {
+        margin: 0.5rem 0;
+    }
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+    }
 }

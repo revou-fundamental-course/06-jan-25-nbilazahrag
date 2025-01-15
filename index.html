@@ -16,7 +16,7 @@
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#ourProfile">Our Profile</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Message Us</a></li>
+            <li><a href="#messageUs">Message Us</a></li>
         </ul>
     </header>
 
@@ -32,7 +32,7 @@
                 </div>
                 <!--GREETING TEXT-->
                 <div class="main-text">
-                    <h1 id="text">Hi <span id="name">Nabila</span>, welcome to my web!</h1>
+                    <h1 id="text">Hi <span id="name">Name</span>, welcome to my web!</h1>
                 </div>
                 <!--SLIDER NAV-->
                 <div class="slider-nav">
@@ -57,15 +57,52 @@
             <div class="profile-text">
                 <h1>Nabila Zahra Aghnia</h1>
                 <h2 id="autoType">I'm a <span style="color: #d62909;" class="auto-type"> </span></h2>
+                <p>The visual assets featured on this website are sourced exclusively from <br>the promotional materials for Red Velvet's "Queens Mystic General Store" <br>concept.
+                    They are used here solely for fan-made purposes <br>and not for commercial gain.
+                </p>
+            </div>
+        </div>
+
+
+        <!--MESSAGE US-->
+        <div class="messageUs" id="messageUs">
+            <div class="message-text">
+                <h3>Message Us</h3>
+                <h1>Send us message for any info.</h1>
+                <p>Call us for any emergency to this number</p>
+                <p>+62 (87) 876 - 271 -373</p>
+            </div>
+            <div class="message-input">
+                <div class="input-group">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Tanggal Lahir :</label>
+                    <input type="date" id="dob" name="Tanggal Lahir">
+                    <span class="error-message" id="dob-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" name="gender" value="Perempuan">Perempuan
+                    <input type="radio" name="gender" value="Laki-laki">Laki-laki
+                    <span class="error-message" id="gender-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="message">Pesan :</label>
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button id="subMessage">Submit</button>
             </div>
         </div>
     
-
-
-
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>RevoU Mini Project created by <a href="https://linkedin.com/in/nbilazahr">Nabila Zahra</a></p>
+    </footer>
 
 
 
