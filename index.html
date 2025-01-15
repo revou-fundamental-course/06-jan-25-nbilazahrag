@@ -21,19 +21,37 @@
     </header>
 
     <main>
-        <!--Home-->
-        <section>
-            <img src="assets\main.png" id="main">
-
-            <!--Greeting-->
-            <h1 id="text">Hi <span id="name" style="color: #d62909;">Nabila</span>, welcome to my web!</h1>
-
-            <!--Change Name-->
-            <form>
-                <input required type="text" placeholder="Your Name" id="name-input">
-                <button id="submit">Send</button>
-            </form>
+        <!--SLIDER-->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider" id="slider">
+                    <img src="assets/slide1.png" id="slide1">
+                    <img src="assets/slide2.png" id="slide2">
+                    <img src="assets/slide3.png" id="slide3">
+                    <img src="assets/slide4.png" id="slide4">
+                </div>
+                <!--GREETING TEXT-->
+                <div class="main-text">
+                    <h1 id="text">Hi <span id="name">Nabila</span>, welcome to my web!</h1>
+                </div>
+                <!--SLIDER NAV-->
+                <div class="slider-nav">
+                    <a href="#slide1" data-slide="0"></a>
+                    <a href="#slide2" data-slide="1"></a>
+                    <a href="#slide3" data-slide="2"></a>
+                    <a href="#slide4" data-slide="3"></a>
+                </div>
+                <!--CHANGE NAME-->
+                <form class="name-form">
+                    <input required type="text" placeholder="Your Name" id="name-input">
+                    <button id="submit">Send</button>
+                </form>
+            </div>
         </section>
+    
+
+
+
     </main>
 
     <footer></footer>
